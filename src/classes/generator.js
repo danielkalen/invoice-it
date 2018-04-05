@@ -418,6 +418,7 @@ export default class Generator extends Common {
     return {
       html,
       toFile: (filepath) => this._toFileFromHTML(html, (filepath) || `${keys.filename}.html`),
+      toBuffer: () => Promise.resolve(Buffer.from(html))
     };
   }
 
@@ -471,10 +472,10 @@ export default class Generator extends Common {
    * @private
    */
   _toBufferFromPDF(content) {
-    return content.toBuffer((err, buffer) => {
-      if (err) throw new Error(err);
-      return buffer;
-    });
+    return new Promise((resolve, reject) => content.toBuffer((err, buffer) => {
+      if (err) return reject(err);
+      return resolve(buffer);
+    }));
   }
 
   /**
