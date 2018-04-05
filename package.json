@@ -1,5 +1,5 @@
 {
-  "name": "@rimiti/invoice-it",
+  "name": "@danielkalen/invoice-it",
   "version": "2.3.0",
   "description": "Order and invoice generator",
   "license": "MIT",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rimiti/invoice-it.git"
+    "url": "git+https://github.com/danielkalen/invoice-it.git"
   },
   "keywords": [
     "node",
@@ -33,12 +33,12 @@
     "url": "dimsolution.com"
   },
   "bugs": {
-    "url": "https://github.com/rimiti/invoice-it/issues"
+    "url": "https://github.com/danielkalen/invoice-it/issues"
   },
   "engines": {
     "node": ">=6"
   },
-  "homepage": "https://github.com/rimiti/invoice-it#readme",
+  "homepage": "https://github.com/danielkalen/invoice-it#readme",
   "dependencies": {
     "html-pdf": "^2.2.0",
     "i18n-factory": "0.0.2",
